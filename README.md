@@ -8,7 +8,31 @@ I bought an Altos ACS8000-2 and this is my journey
 The ACS8000-2 is a single board Z80 CP/M computer, with two 8 inch Shugart SA-801, with a serial console port at 9600 8bit NoParity 1 stop bit.
 
 ## Software
-A CP/M 2.2 boot disk is available for download from archive.org
+A CP/M 2.2 boot disk is available for download from [archive.org](https://archive.org/details/Altos_Computer_Systems_ACS_8000_TOSEC_2012_04_23).  
+There's four TD0 disk images in there, a CP/M 2.21 Boot and an Altos ACSDiagnostics Disk which can format disks.  There's a DMA and non-DMA version
+of each.  Only the non-DMA versions work on the ASC8000.
+
+This greaseweazle (1.21 or later) command will convert the CPM221 TD0 to a HFE that will boot from the Gotek.  The bitrate is 500kbps.  If 250kbps, the disk spins at 180RPM which won't boot.
+
+
+    gw convert --format dec.rx01 ACS8000_CPM221.td0 ACS8000_CPM221.hfe
+
+My FF\FF.cfg is
+
+    interface=shugart
+    host=unspecified
+    pin02=nc
+    pin34=rdy
+
+## Connection
+
+I connected my greaseweazle to the 50 way IDC connector using [this wonderful adapter](https://www.tindie.com/products/siliconinsider/8-floppy-disk-interface-50-pin-to-34-pin-adapter/) featured on [Curious Marc's](https://youtu.be/oL0LXSE1jeM?si=E70dFKGQlqYFbhoz&t=382) and [Adrian Blacks](https://youtu.be/TfEzjcG_0gs?si=2jY0N0QAEGCFDjhS&t=1020) videos on connecting 8" floppies to 34 pin cables.
+
+I can also swap this out for the GoTek, or also a Lotharek HXC USB Floppy Emulator (read only).  
+
+I wasted a lot of time with the HxcFloppyEmulator converting images from varying formats to .hfe, and would recommend using GreaseWeazle to convert formats as well as burn and read physical media.  The Gotek is more flexible that then USB Emulator being read only.
+
+## Boot Screens
 
 ```
 32K ALTOS LOADER VERS 2.21
