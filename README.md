@@ -11,15 +11,15 @@ The system came without boot disks, so I bought some blank floppies and connecte
 
 [50 pin adapter](https://www.tindie.com/products/siliconinsider/8-floppy-disk-interface-50-pin-to-34-pin-adapter/)
 
-![Adapter](assets\PXL_20241029_210650003.MP.jpg)
+![Adapter](assets/PXL_20241029_210650003.MP.jpg)
 
 GoTek flashed with [FlashFloppy](https://github.com/keirf/flashfloppy).  Buy your goteks [direct from FlashFloppy's author](https://www.ebay.co.uk/usr/zeroflux?mkcid=1&mkrid=710-53481-19255-0&siteid=3&campid=5338940711&customid=flashfloppy&toolid=10001&mkevt=1) pre-flashed.
 
-![GoTek](assets\PXL_20241029_210745987.jpg)![GoTek rear](assets\PXL_20241029_210804325.jpg)
+![GoTek](assets/PXL_20241029_210745987.jpg)![GoTek rear](assets/PXL_20241029_210804325.jpg)
 
 HXC
 
-![HXC](assets\PXL_20241029_210828974.jpg)![HXC rear](assets\PXL_20241029_210839078.MP.jpg)
+![HXC](assets/PXL_20241029_210828974.jpg)![HXC rear](assets/PXL_20241029_210839078.MP.jpg)
 
 Greaseweazle.  [Buy from Greaseweazle's creator](https://www.ebay.co.uk/usr/zeroflux?mkcid=1&mkrid=710-53481-19255-0&siteid=3&campid=5338940711&customid=flashfloppy&toolid=10001&mkevt=1)
 
@@ -34,7 +34,7 @@ This [greaseweazle](https://github.com/keirf/greaseweazle) (1.21 or later) comma
 
     gw convert --format dec.rx01 ACS8000_CPM221.td0 ACS8000_CPM221.hfe
 
-My FF\FF.cfg is
+My FF/FF.cfg is
 
     interface=shugart
     host=unspecified
@@ -49,7 +49,7 @@ I connected my greaseweazle to the 50 way IDC connector using [this wonderful ad
 
 I can also swap this out for the GoTek, or also a Lotharek HXC USB Floppy Emulator (read only).  
 
-I wasted a lot of time with the HxcFloppyEmulator converting images from varying formats to .hfe, and would recommend using GreaseWeazle to convert formats as well as burn and read physical media.  The Gotek is more flexible than the USB Emulator as it's not read only.
+I wasted a lot of time with the HxcFloppyEmulator converting images from varying formats to .hfe that wouldn't boot, and would recommend using GreaseWeazle to convert formats as well as burn and read physical media.  The Gotek is more flexible than the USB Emulator as it's not read only.
 
 ## Boot Screens
 
