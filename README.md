@@ -30,7 +30,7 @@ A CP/M 2.2 boot disk is available for download from [archive.org](https://archiv
 There's four TD0 disk images in there, a CP/M 2.21 Boot and an Altos ACSDiagnostics Disk which can format disks.  There's a DMA and non-DMA version
 of each.  Only the non-DMA versions work on the ASC8000.
 
-This [greaseweazle](https://github.com/keirf/greaseweazle) (1.21 or later) command will convert the CPM221 TD0 to a HFE that will boot from the Gotek.  The bitrate is 500kbps.  [FluxMyFluffy](https://github.com/FrankieTheFluff/FluxMyFluffyFloppy) makes a great GUI for gw.  If 250kbps, the disk spins at 180RPM which won't boot.
+This [greaseweazle](https://github.com/keirf/greaseweazle) (1.21 or later) command will convert the CPM221 TD0 to a HFE that will boot from the Gotek.  [FluxMyFluffy](https://github.com/FrankieTheFluff/FluxMyFluffyFloppy) makes a great GUI for gw.  The bitrate is 500kbps; if 250kbps is used (which seems correct), the disk spins at 180RPM which won't boot.
 
     gw convert --format dec.rx01 ACS8000_CPM221.td0 ACS8000_CPM221.hfe
 
