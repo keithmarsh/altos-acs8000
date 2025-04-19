@@ -5,7 +5,7 @@ I bought an Altos ACS8000-2 and this is my journey
 
 ## Hardware
 
-The ACS8000-2 is a single board Z80 CP/M computer, with two 8 inch Shugart SA-801, with a serial console port at 9600 8bit NoParity 1 stop bit.
+The ACS8000-2 is a single board Z80 CP/M computer, with two 8 inch Shugart SA-801, with a serial console port at 9600 8bit NoParity 1 stop bit.  A null modem cable is required to connect to a PC port.
 
 The system came without boot disks, so I bought some blank floppies and connected them to a Greaseweazle board via an 50 pin to 34 pin adapter and burnt a boot disk.  See below for software.
 
